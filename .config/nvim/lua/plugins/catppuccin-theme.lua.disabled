@@ -1,0 +1,12 @@
+-- luacheck: ignore vim
+return {
+  "catppuccin/nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    require("catppuccin").setup({
+      flavor = "auto" -- latte, frappe, macchiato, mocha
+    })
+    vim.cmd('colorscheme catppuccin-mocha')
+  end
+}
