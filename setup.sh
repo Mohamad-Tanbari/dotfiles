@@ -22,6 +22,11 @@ cd .. || exit
 cd .. || exit
 sudo rm -r ./temp
 
+# Install npm for the TS language serer
+sudo apt install npm
+# Install bash language server
+npm i -g bash-language-server
+
 # install languages
 curl -fsSL https://bun.sh/install | bash
 sudo apt install -y default-jdk
